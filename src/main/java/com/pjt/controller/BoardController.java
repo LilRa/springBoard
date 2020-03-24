@@ -38,18 +38,6 @@ public class BoardController {
 		log.debug("其捞瘤 皋捞目目目目目目目---------------"+pageMaker.getStartPage());
 		log.debug("其捞瘤 皋捞目目目目目目目---------------"+pageMaker.getStartPage());
 		log.debug("其捞瘤 皋捞目目目目目目目---------------"+pageMaker.getStartPage());
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		log.debug("ssssssssssssssss目---------------"+cri.getPageStart());
 		log.debug("ssssssssssssssss目---------------"+cri.getPage());
 		log.debug("ssssssssssssssss目---------------"+cri.getPerPageNum());

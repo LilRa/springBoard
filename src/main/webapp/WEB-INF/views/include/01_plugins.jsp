@@ -14,8 +14,8 @@
      user experience. -->
      
      <!-- jQuery Validation -->
-    <script src='<c:url value="/jquery-validation-1.19.0/jquery.validate.min.js"/>'></script>
-    <script src='<c:url value="/jquery-validation-1.19.0/additional-methods.js"/>'></script>
-    <script src='<c:url value="/jquery-validation-1.19.0/messages_ko.js"/>'></script>
+    <script src='<c:url value="/resources/jquery-validation-1.19.0/jquery.validate.min.js"/>'></script>
+    <script src='<c:url value="/resources/jquery-validation-1.19.0/additional-methods.js"/>'></script>
+    <script src='<c:url value="/resources/jquery-validation-1.19.0/messages_ko.js"/>'></script>
     
-    <script src='<c:url value="/plugins/iCheck/icheck.min.js"/>'></script>
+    <script src='<c:url value="/resources/plugins/iCheck/icheck.min.js"/>'></script>
