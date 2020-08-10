@@ -7,6 +7,7 @@ import javax.inject.Inject;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.pjt.commom.Criteria;
 import com.pjt.vo.BoardVO;
@@ -47,5 +48,14 @@ public class BoardDAO {
 	public void delete(String string, BoardVO boardVO) {
 		// TODO Auto-generated method stub
 		sqlSession.delete("board.deleteBoard", boardVO);
+	}
+	
+	public void fileInsert() {
+		sqlSession.insert("board.insertFile");
+	}
+
+	public void fileInsert(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		sqlSession.insert("board.insertFile",map);
 	}
 }

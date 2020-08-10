@@ -64,9 +64,7 @@
                                             <th style="width: 80px">조회수</th>
                                             <th style="width: 100px">작성일</th>
                                         </tr>
-                                        <div id="resultSet">
-                                        
-                                        </div>
+                                        	<table  id="resultSet"></table>
 <%--                                         <c:choose> --%>
 <%--                                             <c:when test="${fn:length(list) > 0 }"> --%>
 <%--                                                 <c:forEach items="${list }" var="bList"> --%>
@@ -86,7 +84,9 @@
 <!--                                                 </tr> -->
 <%--                                             </c:otherwise> --%>
 <%--                                         </c:choose> --%>
+											<table id="rsultLink"></table>
                                     </tbody>
+                                    
                                 </table>
                                 <!-- /.table -->
                             </div>

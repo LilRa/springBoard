@@ -3,6 +3,9 @@ package com.pjt.service;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
+
 import com.pjt.commom.Criteria;
 import com.pjt.vo.BoardVO;
 
@@ -21,4 +24,7 @@ public interface BoardService {
 	BoardVO modifyBoard(BoardVO boardVO);
 	
 	void deleteBoard(BoardVO boardVO);
+	
+	void insertFile(MultipartFile[] file) throws Exception;
+		
 }

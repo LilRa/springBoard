@@ -108,5 +108,25 @@
                 IDX = #{ IDX}
         ]]>
     </update>
+    
+    <insert id="insertFile" parameterType="hashmap">
+    	<![CDATA[
+    		INSERT INTO TB_FILE
+    		(
+    			ORG_FILE_NAME,
+    			SAVE_FILE_NAME,
+    			FILE_SIZE,
+    			CREA_DATE,
+    			UPDATE_DATE
+    		)VALUES
+    		(
+	            #{ ORG_FILE_NAME},
+	            #{ SAVE_FILE_NAME},
+	            #{ FILE_SIZE},
+	            SYSDATE(),
+	            SYSDATE()
+    		)
+    	]]>
+    </insert>
         
 </mapper>

@@ -32,21 +32,10 @@ public class BoardController {
 		
 		PageMaker pageMaker = new PageMaker();
 		pageMaker.setCri(cri);
-		log.debug("其捞瘤 皋捞目目目目目目目---------------"+pageMaker.getStartPage());
-		log.debug("其捞瘤 皋捞目目目目目目目---------------"+pageMaker.getStartPage());
-		log.debug("其捞瘤 皋捞目目目目目目目---------------"+pageMaker.getStartPage());
-		log.debug("其捞瘤 皋捞目目目目目目目---------------"+pageMaker.getStartPage());
-		log.debug("其捞瘤 皋捞目目目目目目目---------------"+pageMaker.getStartPage());
-		log.debug("其捞瘤 皋捞目目目目目目目---------------"+pageMaker.getStartPage());
-		log.debug("ssssssssssssssss目---------------"+cri.getPageStart());
-		log.debug("ssssssssssssssss目---------------"+cri.getPage());
-		log.debug("ssssssssssssssss目---------------"+cri.getPerPageNum());
 		pageMaker.setTotalCount(boardService.countBoardListTotal());
-		log.debug("ssssssssssssssss目---------------"+boardService.countBoardListTotal());		
 		List<Map<String,Object>> list = boardService.selectBoardList(cri);
 		mav.addObject("list",list);
 		mav.addObject("pageMaker",pageMaker);
-		log.debug("list 蔼涝聪促. ----------> "+list.toString());
 		return mav;
 	}
 	
@@ -58,7 +47,6 @@ public class BoardController {
     @RequestMapping(value="/board/boardWrite", method=RequestMethod.POST)
     public ModelAndView boardWritePOST(BoardVO boardVO) throws Exception {
     	ModelAndView mav = new ModelAndView("redirect:/board/boardList");
-    	log.debug("咯扁鳖柳 甸绢吭聪? ");
     	boardService.insertBoard(boardVO);
         return mav;
     }
@@ -70,7 +58,6 @@ public class BoardController {
 		Map<String, Object> detail = boardService.viewBoardDetail(boardVO);
 		mv.addObject("detail",detail);
 		mv.addObject("cri",cri);
-		log.debug("叼抛老蔼 ----------------> :"+detail);
 		return mv;
 	}
 	
@@ -80,7 +67,6 @@ public class BoardController {
 		Map<String, Object> detail = boardService.selectBoardDetail(boardVO);
 		mv.addObject("detail", detail);
 		mv.addObject("cri",cri);
-		log.debug("荐沥其捞瘤 ----------------> :"+detail);
 		return mv;
 	}
 	
